@@ -1,4 +1,5 @@
 import Button from "../Button";
+import { NavItem } from "./NavItem";
 const NavBar = () => {
   return (
     <div className="text-white bg-black flex items-center py-6 px-14 justify-between">
@@ -7,23 +8,13 @@ const NavBar = () => {
       </div>
       <div>
         <ul className="flex items-center gap-8 cursor-pointer font-bold">
-          <li className="transform transition hover:text-blue-400 hover:scale-110">
-            Home
-          </li>
-          <li className="transform transition hover:text-blue-400 hover:scale-110">
-            Featured projects
-          </li>
-          <li className="transform transition hover:text-blue-400 hover:scale-110">
-            About me
-          </li>
-          <li className="transform transition hover:text-blue-400 hover:scale-110">
-            Achievements
-          </li>
-          <li className="transform transition hover:text-blue-400 hover:scale-110">
-            Contact
-          </li>
+          <NavItem>Home</NavItem>
+          <NavItem>Featured projects</NavItem>
+          <NavItem>About me</NavItem>
+          <NavItem>Achievements</NavItem>
+          <NavItem>Contact</NavItem>
           <li>
-            <Button className="transform transition bg-white text-black hover:scale-110 hover:text-blue-600">
+            <Button className="transform transition duration-300 bg-white text-black hover:scale-110 hover:text-blue-600">
               Download CV
             </Button>
           </li>
