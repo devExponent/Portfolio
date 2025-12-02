@@ -1,0 +1,17 @@
+
+
+body{
+  box-sizing: border-box;
+  /* background-color: rgba(0, 0, 0, 0.848); */
+  
+}
+
+#background{
+  
+ background-image:  linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url('assets/background.jpg');
+    background-size: cover;     
+  background-position: center;   
+  background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+}
