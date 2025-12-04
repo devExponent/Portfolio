@@ -1,6 +1,7 @@
 import "./App.css";
 import NavBar from "./component/nav/NavBar";
 import { motion } from "framer-motion";
+import Header from "./pages/Header";
 
 function App() {
   const pvariant = {
@@ -19,7 +20,7 @@ function App() {
   return (
     <section id="background">
       <div>
-        <NavBar />
+        <Header />
         <motion.div variants={pvariant} initial="hidden" animate="show">
           <motion.p
             className="text-white my-5"
